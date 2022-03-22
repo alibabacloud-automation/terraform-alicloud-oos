@@ -1,0 +1,9 @@
+version_name            = "update_version_name"
+auto_delete_executions  = false
+template_tags           = {}
+parameter_value         = "example_value2"
+parameter_description   = "update_parameter_description"
+parameter_tags          = {}
+application_name        = "tf-name"
+application_description = "update_application_description"
+application_tags        = {}
