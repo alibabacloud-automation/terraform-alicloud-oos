@@ -1,13 +1,6 @@
-
-variable "resource_group_id" {
-  description = "The ID of the resource group."
-  type        = string
-  default     = ""
-}
-
 #alicloud_oos_template
 variable "create_template" {
-  description = "Controls if oos template should be created"
+  description = "Controls if oos template should be created."
   type        = bool
   default     = false
 }
@@ -41,6 +34,7 @@ variable "template_tags" {
   type        = map(string)
   default     = {}
 }
+
 #alicloud_oos_parameter
 variable "create_parameter" {
   description = "Controls if oos parameter should be created"
@@ -75,7 +69,13 @@ variable "parameter_description" {
 variable "constraints" {
   description = "The constraints of the common parameter. "
   type        = string
-  default     = null
+  default     = ""
+}
+
+variable "resource_group_id" {
+  description = "The ID of the resource group."
+  type        = string
+  default     = ""
 }
 
 variable "parameter_tags" {
@@ -83,6 +83,7 @@ variable "parameter_tags" {
   type        = map(string)
   default     = {}
 }
+
 #alicloud_oos_application
 variable "create_application" {
   description = "Controls if oos application should be created"
@@ -107,4 +108,3 @@ variable "application_tags" {
   type        = map(string)
   default     = {}
 }
-

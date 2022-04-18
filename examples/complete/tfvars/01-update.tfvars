@@ -1,9 +1,19 @@
-version_name            = "update_version_name"
-auto_delete_executions  = false
-template_tags           = {}
-parameter_value         = "example_value2"
-parameter_description   = "update_parameter_description"
-parameter_tags          = {}
-application_name        = "tf-name"
-application_description = "update_application_description"
-application_tags        = {}
+#alicloud_oos_template
+version_name           = "update-tf-testacc-template-version-name"
+auto_delete_executions = true
+template_tags = {
+  Name = "updateTEMPLATE"
+}
+
+#alicloud_oos_parameter
+parameter_value       = "tf-testacc-oos-parameter"
+parameter_description = "update-tf-testacc-parameter-description"
+parameter_tags = {
+  Name = "updatePARAMETER"
+}
+
+#alicloud_oos_application
+application_description = "update-tf-testacc-application-description"
+application_tags = {
+  Name = "updateAPPLICATION"
+}
