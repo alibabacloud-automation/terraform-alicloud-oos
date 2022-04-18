@@ -1,7 +1,8 @@
+#alicloud_oos_template
 variable "version_name" {
   description = "The name of template version."
   type        = string
-  default     = "version_name"
+  default     = "tf-testacc-template-version-name"
 }
 
 variable "auto_delete_executions" {
@@ -13,49 +14,43 @@ variable "auto_delete_executions" {
 variable "template_tags" {
   description = "A mapping of tags to assign to the resource."
   type        = map(string)
-  default     = {
-    Created = "TF"
-    For     = "OosTemplate"
+  default = {
+    Name = "TEMPLATE"
   }
 }
 
+#alicloud_oos_parameter
 variable "parameter_value" {
   description = "The value of the common parameter. The value must be 1 to 4096 characters in length."
   type        = string
-  default     = "example_value"
+  default     = "tf-testacc-oos-parameter"
 }
 
 variable "parameter_description" {
   description = "The description of the common parameter. The description must be 1 to 200 characters in length."
   type        = string
-  default     = "parameter_description"
+  default     = "tf-testacc-parameter-description"
 }
 
 variable "parameter_tags" {
   description = "A mapping of tags to assign to the resource."
   type        = map(string)
-  default     = {
-    Created = "TF"
-    For     = "OosParameter"
+  default = {
+    Name = "PARAMETER"
   }
 }
 
-variable "application_name" {
-  description = "The name of the application."
-  type        = string
-  default     = "tf-test"
-}
-
+#alicloud_oos_application
 variable "application_description" {
   description = "Application group description information."
   type        = string
-  default     = "application_description"
+  default     = "tf-testacc-application-description"
 }
 
 variable "application_tags" {
   description = "A mapping of tags to assign to the resource."
   type        = map(string)
-  default     = {
-    Created = "TF"
+  default = {
+    Name = "APPLICATION"
   }
 }

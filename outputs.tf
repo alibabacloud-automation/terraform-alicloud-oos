@@ -12,4 +12,3 @@ output "oos_application_id" {
   description = "The id of the oos application."
   value       = concat(alicloud_oos_application.application.*.id, [""])[0]
 }
-

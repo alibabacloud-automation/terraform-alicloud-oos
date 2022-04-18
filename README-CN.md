@@ -7,7 +7,6 @@ terraform-alicloud-oos
 
 本 Module 用于在阿里云基于 OOS 搭建自动化运维服务，包括模板、参数、应用等。
 
-
 本 Module 支持创建以下资源:
 
 * [alicloud_oos_template](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/oos_template)
@@ -66,7 +65,7 @@ EOF
 
 ## 示例
 
-* [Clickhouse 完整示例](https://github.com/terraform-alicloud-modules/terraform-alicloud-oos/tree/main/examples/complete)
+* [OOS 完整示例](https://github.com/terraform-alicloud-modules/terraform-alicloud-oos/tree/main/examples/complete)
 
 ## 注意事项
 
