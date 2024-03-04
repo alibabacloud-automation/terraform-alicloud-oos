@@ -1,3 +1,7 @@
+provider "alicloud" {
+  region = "cn-hangzhou"
+}
+
 data "alicloud_resource_manager_resource_groups" "default" {
 
 }
